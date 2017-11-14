@@ -1,4 +1,31 @@
-<!DOCTYPE html>
+<div class="wrapper">
+    <div class="g_header">
+        <app-header></app-header>
+    </div>
+    <div class="g_content-main">
+        <app-content-main></app-content-main>
+    </div>
+    <div class="g_gallery" id="portfolio">
+        <app-gallery></app-gallery>
+    </div>
+    <div class="g_footer">
+        <app-footer></app-footer>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -41,10 +68,17 @@
             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
           </form>
         </div>
-      </nav>
-  <div class="container">
+      </nav> 
+       
+         
+  <div class="container wrapper3d">
+    <img class="images" [src]="fullImagePath">
     <h1 class="welcome-title">NSNSolutions </h1>
     <p class="welcome-desc">Welcome to my awesome website , here I develop with Angular5</p>
+  </div>
+  <div class="container wrapper3d">
+    <h3>Bar Chart</h3>		
+    <app-bar-chart *ngIf="chartData" [data]="chartData"></app-bar-chart>
   </div>
   <div style="text-align:center">
     <h1>
@@ -65,4 +99,4 @@
     </ul>
   </div>
 </body>
-</html>
+</html> -->

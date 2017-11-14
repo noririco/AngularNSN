@@ -7,9 +7,10 @@
     grid-template-columns: repeat(12,1fr);
     grid-gap: 0px;
     grid-template-rows: repeat(12,1fr);
+    /* border: 5px solid green; */
 }
 div{
-    border: 1px solid green;
+    /* border: 1px solid green; */
 }
 .f {
     display: flex;

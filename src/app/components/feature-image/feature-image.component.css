@@ -7,7 +7,7 @@
     grid-template-rows: auto;
 }
 div{
-    border: 1px solid green;
+    /* border: 1px solid green; */
 }
 button{
     width: 100%;
@@ -28,13 +28,17 @@ button{
 .f_like{
     grid-column: 2 / 4;
     grid-row: 10 / span 2;
+    font-size: 14px;
 }
 .f_goto{
     grid-column: 10 / 12;
     grid-row: 10 / span 2;
+    /* fix this */
+    font-size: 14px;
 }
 
 .img_title {
-    font-size: minmax(1em, 4em);
+    /* fix this */
+    font-size: 14px;
 }
 

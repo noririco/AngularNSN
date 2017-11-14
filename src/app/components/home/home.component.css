@@ -5,7 +5,7 @@
     display: grid;
     grid-template-columns: repeat(12,1fr);
     grid-gap: 0px;
-    grid-auto-rows: 11vh 100vh auto 230px;
+    grid-auto-rows: 11vh 93vh auto 230px;
 }
 
 div {
@@ -20,6 +20,7 @@ div {
 .g_content-main{
     grid-column: 1 / 13;
     grid-row: 1 / span 2;
+    border: 1px solid red;
 }
 
 .g_gallery{
@@ -35,7 +36,7 @@ div {
 /* for tablet */
 @media screen and (min-width: 600px) {
     .wrapper{
-        grid-auto-rows: 11vh 89vh auto 230px;
+        grid-auto-rows: 11vh 93vh auto 230px;
     }
     .g_header{
         background-color: red;

@@ -24,21 +24,21 @@ div{
 }
 .f_mini_title{
     grid-column : 1 / 13;
-    grid-row: 5;
+    grid-row: 4;
 }
 .f_main_title{
     grid-column: 1 / 13;
-    grid-row: 6;
+    grid-row: 5;
 }
 .f_sub_title{
     grid-column: 2 / 7;
-    grid-row: 7;
+    grid-row: 6;
     color: white;
     
 }
 .f_aboutlink{
     grid-column: 7 / 12;
-    grid-row: 7;
+    grid-row: 6;
     color: #4378ff;
     white-space: nowrap;
     

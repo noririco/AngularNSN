@@ -12,7 +12,7 @@ import * as $ from 'jquery';
 export class HomeComponent implements OnInit {
   ngOnInit(): void {
     //throw new Error("Method not implemented.");
-    this.fixHeight();
+    //this.fixHeight();
   }
   
   fixHeight(){

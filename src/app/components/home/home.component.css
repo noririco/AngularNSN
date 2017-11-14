@@ -2,6 +2,7 @@
 
 .wrapper{
     width: 100%;
+    height: 100vh;
     display: grid;
     grid-template-columns: repeat(12,1fr);
     grid-gap: 0px;
@@ -31,6 +32,13 @@ div {
 .g_footer{
     grid-column: 1 / 13;
     grid-row: 4;
+}
+
+@media screen and (-webkit-device-pixel-ratio: 1.5) {
+    /* CSS for high-density screens */
+    .wrapper{
+        height: calc(100vh + 20px);
+    }
 }
 
 /* for tablet */

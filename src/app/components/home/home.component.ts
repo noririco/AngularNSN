@@ -3,7 +3,7 @@ import { FooterComponent } from './../footer/footer.component';
 import { GalleryComponent } from './../gallery/gallery.component';
 import { HeaderComponent } from './../header/header.component';
 import { Component, OnInit } from '@angular/core';
-
+import * as $ from 'jquery';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -12,10 +12,15 @@ import { Component, OnInit } from '@angular/core';
 export class HomeComponent implements OnInit {
   ngOnInit(): void {
     //throw new Error("Method not implemented.");
+    this.fixHeight();
   }
   
-  
-  
+  fixHeight(){
+    let clientHeight = $( window ).height();
+    console.log(clientHeight);
+    $('.wrapper').css('height', clientHeight);
+  }
+    
   
   
   // title = "HomeComponent";

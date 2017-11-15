@@ -12,14 +12,14 @@ export class HeaderComponent implements OnInit {
   ngOnInit() {
   }
 
-  goTo(location: string) : void
-  {
-    window.location.hash = ''; 
-    window.location.hash = location;
-  }
+  // goTo(location: string) : void
+  // {
+  //   window.location.hash = ''; 
+  //   window.location.hash = location;
+  // }
 
-  toggleCollapsed(): void {
-    console.log(this.collapsed);
-    this.collapsed = !this.collapsed;
-  }
+  // toggleCollapsed(): void {
+  //   console.log(this.collapsed);
+  //   this.collapsed = !this.collapsed;
+  // }
 }

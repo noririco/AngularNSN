@@ -2,17 +2,38 @@ import { ContentMainComponent } from './../content-main/content-main.component';
 import { FooterComponent } from './../footer/footer.component';
 import { GalleryComponent } from './../gallery/gallery.component';
 import { HeaderComponent } from './../header/header.component';
-import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
+
+import { Component, HostListener, Inject, OnInit } from '@angular/core';
+import { DOCUMENT } from '@angular/platform-browser';
+
 import * as $ from 'jquery';
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
+  ID: any;
+  constructor(private route: ActivatedRoute, private router: Router) { 
+    //for about/:id
+    this.route.params.subscribe( res => this.ID = +[res.id]);
+
+    
+  }
+  // public navIsFixed: boolean = false;
+  
+  // constructor(@Inject(DOCUMENT) private document: Document) { }
+
+  // @HostListener("window:location", [])
+  // onLocationReload() {
+  //   location.reload();
+  // }
+
   ngOnInit(): void {
-    //throw new Error("Method not implemented.");
-    //this.fixHeight();
+    console.log(this.ID);
+    //this.router.navigate(['/about']);
   }
   
   fixHeight(){

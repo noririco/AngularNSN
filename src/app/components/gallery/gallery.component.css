@@ -1,15 +1,9 @@
-.wrapper{
-    
+.ga-wrapper{
     display: grid;
     grid-template-columns: repeat(12,1fr);
     grid-gap: 0px;
-    grid-auto-rows: minmax(300px, auto);
+    grid-auto-rows: auto;
 }
-
-div {
-    /* border: 1px solid red; */
-}
-
 .g_img1{
     grid-column: 1 / 13;
     grid-row: 1;

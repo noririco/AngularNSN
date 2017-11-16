@@ -8,16 +8,32 @@
 a{
     text-decoration: none;
 }
+
+
 .nb_item{
     /* display:inline-flex; 
     justify-content: center; 
     align-items: center;
     align-content: center; */
     display: none;
+    
 }
+.hambtn{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    /* background-color: lightgreen; */
+}
+.menuicon{
+    font-size: 4rem;
+    color: black;
+    /* background-color: green; */
+}
+
 .nb_link1{
     grid-column: 11/12;
     grid-row: 1;
+    
     /* justify-self: left; */
     
 }
@@ -31,15 +47,22 @@ a{
     grid-row: 1;
     /* justify-self: right; */
 }
+.nb_link4{
+    grid-column: 23/23;
+    grid-row: 1;
+}
 
 .link_title{
     /* background-color: purple; */
-    color:white;
+    /* color:white; */
 }
 /* for tablet */
 @media screen and (min-width: 600px) {
     .nb_item{
-        display: none
+        display: none;
+    }
+    .hambtn{
+        display: flex;
     }
 }
 
@@ -54,5 +77,20 @@ a{
         justify-content: center; 
         align-items: center;
         align-content: center;
+        font-family: Helvetica;
+        font-size: 14px;
+    }
+    .hambtn{
+        display:none;
+    }
+    a{
+        color: #A0A09F;
+    }
+    a:hover{
+        color: #004ea1;
+    }
+    a:active{
+        /* Fix this color to show always on active page */
+        color: #007bff;
     }
 }

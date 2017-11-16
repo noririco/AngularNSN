@@ -4,6 +4,8 @@ import { CommonModule } from '@angular/common';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
+import { AngularFontAwesomeModule } from 'angular-font-awesome';
+
 import { HomeComponent } from './components/home/home.component';
 import { BarChartComponent } from './components/bar-chart/bar-chart.component';
 import { HeaderComponent } from './components/header/header.component';
@@ -28,7 +30,8 @@ import { AboutComponent } from './components/about/about.component';
   imports: [
     BrowserModule,
     CommonModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AngularFontAwesomeModule 
   ],
   providers: [
   

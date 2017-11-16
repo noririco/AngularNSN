@@ -9,6 +9,9 @@
     grid-template-rows: repeat(12,1fr);
     /* border: 5px solid green; */
 }
+a{
+    text-decoration: none;
+}
 
 .f {
     display: flex;
@@ -36,7 +39,8 @@
     /* background-color: lightgreen; */
     justify-self: right;
     padding-right: 5%;
-    
+    /* padding-bottom: 17%; */
+    padding-bottom: 32px;
 }
 .f_aboutlink{
     grid-column: 7 / 12;
@@ -45,6 +49,7 @@
     white-space: nowrap;
     justify-self: left;
     padding-left: 4%;
+    padding-bottom: 32px;
     
 }
 .main_title{
@@ -68,6 +73,7 @@
     letter-spacing: 0.05em;
     color: white;
     font-family: Helvetica;
+    padding-top: 35px;
     
 }
 

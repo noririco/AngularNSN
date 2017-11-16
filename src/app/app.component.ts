@@ -11,7 +11,7 @@ export class AppComponent implements OnInit{
   constructor(private router: Router) { }
   title = 'app';
        ngOnInit() {
-          //window.scrollTo(0,0);
+    
        }
   
   

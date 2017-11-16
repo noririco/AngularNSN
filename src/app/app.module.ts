@@ -30,7 +30,9 @@ import { AboutComponent } from './components/about/about.component';
     CommonModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [
+  
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

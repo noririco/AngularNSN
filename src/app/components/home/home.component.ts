@@ -32,18 +32,30 @@ export class HomeComponent implements OnInit {
   // }
 
   ngOnInit(): void {
-    console.log(this.ID);
+    console.log("ngOnInit");
     //this.router.navigate(['/about']);
   }
-  
-  fixHeight(){
-    let clientHeight = $( window ).height();
-    console.log(clientHeight);
-    $('.wrapper').css('height', clientHeight);
+  ngOnChanges(){
+    console.log("ngOnChanges");
   }
-    
-  
-  
+  ngDoCheck(){
+    console.log("ngDoCheck");
+  }
+  ngAfterContentInit(){
+    console.log("ngAfterContentInit");
+  }
+  ngAfterContentChecked(){
+    console.log("ngAfterContentChecked");
+  }
+  ngAfterViewInit(){
+    console.log("ngAfterViewInit");
+  }
+  ngAfterViewChecked(){
+    console.log("ngAfterViewChecked");
+  }
+  ngOnDestroy(){
+    console.log("ngOnDestroy");  
+  }
   // title = "HomeComponent";
   // fullImagePath = '';
   // private chartData: Array<any>;

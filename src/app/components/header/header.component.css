@@ -5,13 +5,14 @@
     grid-template-columns: repeat(24,1fr);
     grid-gap: 0px
 }
-
+a{
+    text-decoration: none;
+}
 .nb_item{
     display:inline-flex; 
     justify-content: center; 
     align-items: center;
     align-content: center;
-
 }
 .nb_link1{
     grid-column: 11/12;

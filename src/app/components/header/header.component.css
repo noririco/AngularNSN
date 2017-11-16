@@ -9,10 +9,11 @@ a{
     text-decoration: none;
 }
 .nb_item{
-    display:inline-flex; 
+    /* display:inline-flex; 
     justify-content: center; 
     align-items: center;
-    align-content: center;
+    align-content: center; */
+    display: none;
 }
 .nb_link1{
     grid-column: 11/12;
@@ -35,11 +36,23 @@ a{
     /* background-color: purple; */
     color:white;
 }
+/* for tablet */
+@media screen and (min-width: 600px) {
+    .nb_item{
+        display: none
+    }
+}
 
 /* for Desktop */
 @media screen and (min-width: 1025px) {
     .navbar-wrapper{
         /* make the items static */
         grid-template-columns: repeat(10,1fr) repeat(4,50px) repeat(10,1fr) ;
+    }
+    .nb_item{
+        display:inline-flex; 
+        justify-content: center; 
+        align-items: center;
+        align-content: center;
     }
 }

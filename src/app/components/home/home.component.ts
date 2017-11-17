@@ -3,7 +3,7 @@ import { FooterComponent } from './../footer/footer.component';
 import { GalleryComponent } from './../gallery/gallery.component';
 import { HeaderComponent } from './../header/header.component';
 import { ActivatedRoute, Router } from '@angular/router';
-
+import { BgImageComponent } from './../bg-image/bg-image.component';
 import { Component, HostListener, Inject, OnInit } from '@angular/core';
 import { DOCUMENT } from '@angular/platform-browser';
 

@@ -58,6 +58,9 @@
 
 /* for Desktop */
 @media screen and (min-width: 1025px) {
+    .ga-wrapper{
+        grid-auto-rows: auto;
+    }
     .g_img1{
         grid-column: 1 / 4;
         grid-row: 1;

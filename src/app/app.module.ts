@@ -14,6 +14,7 @@ import { GalleryComponent } from './components/gallery/gallery.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { FeatureImageComponent } from './components/feature-image/feature-image.component';
 import { AboutComponent } from './components/about/about.component';
+import { BgImageComponent } from './components/bg-image/bg-image.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { AboutComponent } from './components/about/about.component';
     GalleryComponent,
     FooterComponent,
     FeatureImageComponent,
-    AboutComponent
+    AboutComponent,
+    BgImageComponent
   ],
   imports: [
     BrowserModule,

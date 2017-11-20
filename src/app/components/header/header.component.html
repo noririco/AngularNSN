@@ -1,21 +1,25 @@
 <div class="navbar-wrapper">
   <div class="btn nb_link1 nb_item">
-    <a [routerLink]="['/']" routerLinkActive="active-link">
+    <a routerLink="/home" href="#"  [routerLinkActiveOptions]="{ exact:true }" routerLinkActive="active-link" id="home_link" (click)="goTo('home_link')">
       <span class="link_title">HOME</span>
     </a>
   </div>
   <div class="btn nb_link2 nb_item">
-    <a href="#portfolio" target="_self">
-      <span class="link_title">PORTFOLIO</span>
+    <!-- <a href="home#portfolio" target="_self" >
+        <span class="link_title">PORTFOLIO</span>
+    </a> -->
+    <a routerLink="/home" fragment="portfolio" href="#" routerLinkActive="active-link" (click)="goTo('portfolio_link')">
+        <span class="link_title">PORTFOLIO</span>
     </a>
   </div>
   <div class="btn nb_link3 nb_item">
-    <a [routerLink]="['/about']">
+    <a routerLink="/about" href="#"  routerLinkActive="active-link" id="about_link" (click)="goTo('about_link')">
       <span class="link_title">ABOUT</span>
     </a>
   </div>
   <div class="btn nb_link4 nb_item hambtn">
-    <a [routerLink]="['/about']">
+    <!-- TODO: this should open a fullsize page with menu item, with transperent background -->
+    <a routerLink="/about">
       <i class="menuicon fa fa-bars"></i>
       <!-- <img src="assets/images/hamburger-menu.png" alt=""> -->
     </a>

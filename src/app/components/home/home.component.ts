@@ -2,7 +2,7 @@ import { ContentMainComponent } from './../content-main/content-main.component';
 import { FooterComponent } from './../footer/footer.component';
 import { GalleryComponent } from './../gallery/gallery.component';
 import { HeaderComponent } from './../header/header.component';
-import { ActivatedRoute, Router } from '@angular/router';
+import { ActivatedRoute, Router, NavigationEnd } from '@angular/router';
 import { BgImageComponent } from './../bg-image/bg-image.component';
 import { Component, HostListener, Inject, OnInit } from '@angular/core';
 import { DOCUMENT } from '@angular/platform-browser';
@@ -18,51 +18,33 @@ export class HomeComponent implements OnInit {
   ID: any;
   constructor(private route: ActivatedRoute, private router: Router) { 
     //for about/:id
-    this.route.params.subscribe( res => this.ID = +[res.id]);
-
-    
+    // this.route.params.subscribe( res => this.ID = +[res.id]);
+    console.log(this.route.snapshot.fragment);
   }
-  // public navIsFixed: boolean = false;
-  
-  // constructor(@Inject(DOCUMENT) private document: Document) { }
-
-  // @HostListener("window:location", [])
-  // onLocationReload() {
-  //   location.reload();
-  // }
 
   ngOnInit(): void {
-    console.log("ngOnInit");
-    //this.router.navigate(['/about']);
+    if(this.route.snapshot.fragment == 'portfolio'){
+      var fixedString = '#portfolio_link';
+      var link = $(fixedString);
+      var position = link.position();
+      window.scrollTo(0,position.top);
+    } 
+    else{
+      window.scrollTo(0,0);
+    }
   }
-  ngOnChanges(){
-    console.log("ngOnChanges");
-  }
-  ngDoCheck(){
-    console.log("ngDoCheck");
-  }
-  ngAfterContentInit(){
-    console.log("ngAfterContentInit");
-  }
-  ngAfterContentChecked(){
-    console.log("ngAfterContentChecked");
-  }
-  ngAfterViewInit(){
-    console.log("ngAfterViewInit");
-  }
-  ngAfterViewChecked(){
-    console.log("ngAfterViewChecked");
-  }
-  ngOnDestroy(){
-    console.log("ngOnDestroy");  
-  }
+  
+  // ngOnDestroy(){
+  //   console.log("ngOnDestroy");  
+  // }
+
   // title = "HomeComponent";
   // fullImagePath = '';
   // private chartData: Array<any>;
   // constructor() {
   //   this.fullImagePath = 'assets/images/milky-way.jpg';
   //  }
-
+/* THIS IS CHART BAR STARTER */
   // ngOnInit() {
   //   // give everything a chance to get loaded before starting the animation to reduce choppiness
   //   setTimeout(() => {

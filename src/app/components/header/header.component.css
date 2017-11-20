@@ -14,10 +14,6 @@ a{
 }
 
 .nb_item{
-    /* display:inline-flex; 
-    justify-content: center; 
-    align-items: center;
-    align-content: center; */
     display: none;
     
 }
@@ -55,10 +51,6 @@ a{
     grid-row: 1;
 }
 
-.link_title{
-    /* background-color: purple; */
-    /* color:white; */
-}
 /* for tablet */
 @media screen and (min-width: 600px) {
     .nb_item{

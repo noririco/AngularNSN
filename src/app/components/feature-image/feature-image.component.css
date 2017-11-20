@@ -22,7 +22,7 @@ button{
     grid-column: 1 / 13;
     grid-row: 1 / span 12;
     /* background-color: yellow; */
-    z-index: -1;
+    
     
 }
 .f_title{

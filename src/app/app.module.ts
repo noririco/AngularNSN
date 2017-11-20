@@ -15,6 +15,10 @@ import { FooterComponent } from './components/footer/footer.component';
 import { FeatureImageComponent } from './components/feature-image/feature-image.component';
 import { AboutComponent } from './components/about/about.component';
 import { BgImageComponent } from './components/bg-image/bg-image.component';
+import { ContentAboutComponent } from './components/content-about/content-about.component';
+
+// 3rd party libs
+
 
 @NgModule({
   declarations: [
@@ -27,7 +31,8 @@ import { BgImageComponent } from './components/bg-image/bg-image.component';
     FooterComponent,
     FeatureImageComponent,
     AboutComponent,
-    BgImageComponent
+    BgImageComponent,
+    ContentAboutComponent
   ],
   imports: [
     BrowserModule,

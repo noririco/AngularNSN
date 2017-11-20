@@ -1,5 +1,7 @@
+import { HeaderComponent } from './../header/header.component';
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
+import { ContentAboutComponent } from './../content-about/content-about.component';
 
 @Component({
   selector: 'app-about',
@@ -9,15 +11,17 @@ import { ActivatedRoute } from '@angular/router';
 export class AboutComponent implements OnInit {
 
   ID: any;
-  constructor(private route: ActivatedRoute) { 
-    this.route.params.subscribe( (res) => {
-      this.ID = +[res.id];
-    });
+  constructor(private router: Router, private route: ActivatedRoute) { 
+    // check for about/:id 
+    // this.route.params.subscribe( (res) => {
+    //   this.ID = +[res.id];
+    // });
     
   }
 
   ngOnInit() {
-    console.log(this.ID);
+    // console.log(this.ID);
+    window.scrollTo(0,0);
   }
 
 }

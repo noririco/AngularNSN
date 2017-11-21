@@ -1,14 +1,14 @@
-<div class="cm-wrapper" [ngStyle]="{'background-image': 'url(\'' + myImage + '\')'}">
+<div class="cm-wrapper" [ngStyle]="{'background-image': 'url(\'' + myImage + '\')'}">    
     <div class="f f_mini_title">
-        <span class="mini_title">-HELLO-</span>
+        <span class="mini_title">{{ miniTitle }}</span>
     </div>  
     <div class="f f_main_title">
-        <span class="main_title">I'm Tim Amar</span>
+        <span class="main_title">{{ mainTitle }}</span>
     </div>  
     <div class="f f_sub_title">
-        <span class="sub_title">Digital & Web Designer</span>
+        <span class="sub_title">{{ subTitle }}</span>
     </div>  
     <div class="f f_aboutlink">
-        <a [routerLink]="['/about']" class="aboutlink">More info about me ></a>
+        <a [routerLink]="['/about']" class="aboutlink">{{ aboutLinkTitle }}</a>
     </div>
 </div>

@@ -6,7 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent implements OnInit{
-  constructor() { }
+  myLazyImage: any;
+  constructor() {
+    this.myLazyImage = '../assets/images/BG_fixed.png';
+   }
   title = 'app';
   ngOnInit() {
 

@@ -7,10 +7,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContentMainComponent implements OnInit {
   myImage : any;
-  constructor() { }
+  miniTitle : string;
+  mainTitle : string;
+  subTitle : string;
+  aboutLinkTitle : string;
+  
+  constructor() { 
+    this.myImage = this.getImageName();
+    this.miniTitle = "-HELLO-";
+    this.mainTitle = "I'm Tim Amar";
+    this.subTitle = "Digital & Web Designer";
+    this.aboutLinkTitle = "More info about me >";
+  }
 
   ngOnInit() {
-    this.myImage = this.getImageName();
+    
   }
 
   getImageName(){

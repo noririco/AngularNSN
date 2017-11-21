@@ -1,18 +1,21 @@
+import { Component, HostListener, Inject, OnInit } from '@angular/core';
+import { ActivatedRoute, Router, NavigationEnd } from '@angular/router';
 import { ContentMainComponent } from './../content-main/content-main.component';
 import { FooterComponent } from './../footer/footer.component';
 import { GalleryComponent } from './../gallery/gallery.component';
 import { HeaderComponent } from './../header/header.component';
-import { ActivatedRoute, Router, NavigationEnd } from '@angular/router';
-import { BgImageComponent } from './../bg-image/bg-image.component';
-import { Component, HostListener, Inject, OnInit } from '@angular/core';
-import { DOCUMENT } from '@angular/platform-browser';
 
 import * as $ from 'jquery';
+import { fadeInAnimation } from '../../_animations/fadeIn';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  styleUrls: ['./home.component.css'],
+  // make fade in animation available to this component
+  animations: [fadeInAnimation],
+  // attach the fade in animation to the host (root) element of this component
+  host: { '[@fadeInAnimation]': '' }
 })
 export class HomeComponent implements OnInit {
   ID: any;

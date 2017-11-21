@@ -6,6 +6,7 @@
     grid-gap: 0px;
     /* border: 1px solid green; */
 }
+
 a{
     text-decoration: none;
 }
@@ -34,7 +35,6 @@ a{
     grid-row: 1;
     
     /* justify-self: left; */
-    
 }
 .nb_link2{
     grid-column: 12/14;

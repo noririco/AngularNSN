@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { NgStyle } from '@angular/common';
-import * as smoothScorll from 'ng2-smooth-scroll';
 import * as $ from 'jquery';
 import { NavigationEnd, Router, ActivatedRoute } from '@angular/router';
 @Component({

@@ -7,7 +7,7 @@
     grid-template-columns: repeat(12,1fr);
     grid-gap: 0px;
     grid-template-rows: repeat(12,1fr);
-    background-image: url('../../../assets/images/BG_fixed.png');
+    /* background-image: url('../../../assets/images/BG_fixed.png'); */
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: 150%;

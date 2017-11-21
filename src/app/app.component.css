@@ -19,5 +19,5 @@ body{
 }
 
 .lazyimage{
-    display: hidden;
+    display: none;
 }

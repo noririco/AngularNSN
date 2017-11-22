@@ -1,17 +1,17 @@
 <div class="navbar-wrapper">
   <div class="btn nb_link1 nb_item">
-    <a routerLink="/home" href="#"  [routerLinkActiveOptions]="{ exact:true }" routerLinkActive="active-link" id="home_link" (click)="goTo('home_link')">
-      <span class="link_title">HOME</span>
+    <a pageScroll [pageScrollDuration]="900" routerLink="/home" href="#homeWrapper"  [routerLinkActiveOptions]="{ exact:true }" routerLinkActive="active-link" id="home_link">
+      <span class="link_title">{{ homeTitle }}</span>
     </a>
   </div>
   <div class="btn nb_link2 nb_item">
-    <a routerLink="/home" fragment="portfolio" href="#" routerLinkActive="active-link" (click)="goTo('portfolio_link')">
-        <span class="link_title">PORTFOLIO</span>
+    <a pageScroll [pageScrollDuration]="900" routerLink="/home" fragment="portfolio" href="#portfolio_link" routerLinkActive="active-link" (click)="goTo('portfolio_link')">
+        <span class="link_title">{{ portfolioTitle }}</span>
     </a>
   </div>
   <div class="btn nb_link3 nb_item">
-    <a routerLink="/about" href="#"  routerLinkActive="active-link" id="about_link" (click)="goTo('about_link')">
-      <span class="link_title">ABOUT</span>
+    <a routerLink="/about" href="#"  routerLinkActive="active-link" id="about_link">
+      <span class="link_title">{{ aboutTitle }}</span>
     </a>
   </div>
   <div class="btn nb_link4 nb_item hambtn">

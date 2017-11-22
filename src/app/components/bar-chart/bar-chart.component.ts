@@ -108,3 +108,32 @@ export class BarChartComponent implements OnInit, OnChanges {
       .attr('height', d => this.height - this.yScale(d[1]));
   }
 }
+
+/////////////////////  BARCHART STARTER TO PUT IN APP COMPONENT /////////////////////
+  // title = "HomeComponent";
+  // fullImagePath = '';
+  // private chartData: Array<any>;
+  // constructor() {
+  //   this.fullImagePath = 'assets/images/milky-way.jpg';
+  //  }
+/* THIS IS CHART BAR STARTER */
+  // ngOnInit() {
+  //   // give everything a chance to get loaded before starting the animation to reduce choppiness
+  //   setTimeout(() => {
+  //     this.generateData();
+
+  //     // change the data periodically
+  //     setInterval(() => this.generateData(), 3000);
+  //   }, 1000);
+  // }
+
+  // generateData() {
+  //   this.chartData = [];
+  //   for (let i = 0; i < (13 + Math.floor(Math.random() * 10)); i++) {
+  //     this.chartData.push([
+  //       `Index ${i}`,
+  //       Math.floor(Math.random() * 100)
+  //     ]);
+  //   }
+  // }
+  ///////////////////////////////////////////////////////////

@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NgxPageScrollModule } from 'ngx-page-scroll';
 
 import { HomeComponent } from './components/home/home.component';
 import { BarChartComponent } from './components/bar-chart/bar-chart.component';
@@ -38,7 +39,8 @@ import { ContentAboutComponent } from './components/content-about/content-about.
     CommonModule,
     AppRoutingModule,
     AngularFontAwesomeModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    NgxPageScrollModule
   ],
   providers: [
   

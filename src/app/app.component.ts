@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import * as $ from 'jquery';
 
 @Component({
   selector: 'app-root',
@@ -11,7 +12,10 @@ export class AppComponent implements OnInit{
     this.myLazyImage = 'assets/images/BG_fixed.png';
    }
   title = 'app';
-  ngOnInit() {
-    
+  ngOnInit() {  
+        $(".preload").fadeOut(3000, function(){
+          $(".tim").fadeIn(2000);
+        });     
+        
   }
 }

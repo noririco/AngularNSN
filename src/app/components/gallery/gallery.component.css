@@ -4,6 +4,8 @@
     grid-gap: 0px;
     grid-auto-rows: auto;
 }
+
+
 .g_img1{
     grid-column: 1 / 13;
     grid-row: 1;

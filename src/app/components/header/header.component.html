@@ -5,19 +5,25 @@
     </a>
   </div>
   <div class="btn nb_link2 nb_item">
-    <a pageScroll [pageScrollDuration]="900" routerLink="/home" fragment="portfolio" href="#portfolio_link" routerLinkActive="active-link">
+    <a pageScroll [pageScrollOffset]="65" [pageScrollDuration]="900" pageScrollAdjustHash="true" routerLink="/home" href="#portfolio_link" routerLinkActive="active-link">
+    <!-- <a pageScroll [pageScrollDuration]="900" routerLink="/home" fragment="portfolio" href="#portfolio_link" routerLinkActive="active-link"> -->
         <span class="link_title">{{ portfolioTitle }}</span>
     </a>
   </div>
   <div class="btn nb_link3 nb_item">
-    <a routerLink="/about" href="#"  routerLinkActive="active-link" id="about_link">
+    <a pageScroll [pageScrollDuration]="900" routerLink="/about" href="#about_page"  routerLinkActive="active-link" id="about_link">
       <span class="link_title">{{ aboutTitle }}</span>
     </a>
   </div>
   <div class="btn nb_link4 nb_item hambtn">
     <!-- TODO: this should open a fullsize page with menu item, with transperent background -->
-    <a routerLink="/about">
-      <i class="menuicon fa fa-bars"></i>
-    </a>
+    <button>
+        <span class="menuicon">
+            <i class="fa fa-bars fa-fw"></i>
+        </span> 
+    </button>
+  </div>
+  <div id="demo" class="collapse">
+      Lorem ipsum dolor text....
   </div>
 </div>

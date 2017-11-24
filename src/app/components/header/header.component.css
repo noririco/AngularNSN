@@ -4,7 +4,7 @@
     display: grid;
     grid-template-columns: repeat(24,1fr);
     grid-gap: 0px;
-    /* border: 1px solid green; */
+    
 }
 
 a{
@@ -16,18 +16,22 @@ a{
 
 .nb_item{
     display: none;
-    
+    /* border: 1px solid green; */
 }
 .hambtn{
     display: flex;
     justify-content: center; 
-    align-items: center;
-    /* background-color: lightgreen; */
+    align-items: center; 
+    
+}
+button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
 }
 .menuicon{
-    font-size: 3rem;
+    font-size: calc(2vw + 2vh );
     color: black;
-    /* background-color: green; */
 }
 
 .nb_link1{

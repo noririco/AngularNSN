@@ -1,23 +1,16 @@
 <div class="fi-wrapper">
   <div class="f_img">
-    <img src="assets/images/gallery/01preview.gif" alt="" class="img"> </div>
-  <!-- <div class="f_img">
-    <img src="../../../assets/images/gallery/02preview.png" alt="" class="img"> </div>
-  <div class="f_img">
-    <img src="../../../assets/images/gallery/06preview.png" alt="" class="img"> </div>
-  <div class="f_img">
-    <img src="../../../assets/images/gallery/05preview.png" alt="" class="img"> </div>
-  <div class="f_img">
-    <img src="../../../assets/images/gallery/03preview.png" alt="" class="img"> </div>
-  <div class="f_img">
-    <img src="../../../assets/images/gallery/04preview.gif" alt="" class="img"> </div> -->
-  <div class="f_title">
-    <h1 class="img_title">MyImageTitle</h1>
-  </div>
-  <div class="f_like">
-    <button class="like_button">LIKE</button>
-  </div>
-  <div class="f_goto">
-    <button class="goto_button">GOTO</button>
+    <img src="{{image.imgPath}}" alt="" class="img"> </div>
+  <div class="overlay">
+    <div class="f_title">
+      <h1 class="img_title">{{image.title}}</h1>
+    </div>
+    <div class="f_goto">
+      <a routerLink="/about/{{image.imgID}}">
+        <span class="goto">
+            <i class="fa fa-try fa-3x fa-fw" aria-hidden="true"></i>  
+        </span>
+      </a>
+    </div>
   </div>
 </div>

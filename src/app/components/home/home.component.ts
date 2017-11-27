@@ -1,4 +1,4 @@
-import { Component, HostListener, Inject, OnInit } from '@angular/core';
+import { Component, HostListener, Inject, OnInit, OnChanges } from '@angular/core';
 import { ActivatedRoute, Router, NavigationEnd } from '@angular/router';
 import { ContentMainComponent } from './../content-main/content-main.component';
 import { FooterComponent } from './../footer/footer.component';
@@ -28,8 +28,8 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
     // TODO: Toggle this to make NO SCROLL from about page to portfolio
     if(this.route.snapshot.fragment == 'portfolio'){
-    //  console.log("IM HERE");
-    
+      console.log(this.route.snapshot);
+      
     //   var fixedString = '#portfolio_link';
     //   var link = $(fixedString);
     //   var position = link.position();

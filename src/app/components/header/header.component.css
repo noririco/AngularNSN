@@ -13,6 +13,9 @@ a{
 .active-link{
     color: #4378FF;
 }
+.not-active-link{
+    
+}
 
 .nb_item{
     display: none;

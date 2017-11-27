@@ -14,6 +14,14 @@ export class ImageService {
     return IMAGES.slice(0).find(image=> image.imgID == id);
   }
 
+  getImagesGlobal(){
+    return this.myImages = IMAGES_GLOBAL.slice(0);
+  }
+
+  getImageGlobal(id: number) {
+    return IMAGES.slice(0).find(image=> image.imgID == id);
+  }
+
 }
 
 const IMAGES = [
@@ -23,4 +31,8 @@ const IMAGES = [
   { imgID: 4, title: "Yes Binge Buzzfeed Game", imgPath: "assets/images/galleryFixed/05preview.png", imgURI: "" },
   { imgID: 5, title: "Volvo Landing Page", imgPath: "assets/images/galleryFixed/03preview.png", imgURI: "" },
   { imgID: 6, title: "Reshet x Elite Collaboration", imgPath: "assets/images/galleryFixed/04preview.gif", imgURI: "" },
+];
+
+const IMAGES_GLOBAL = [
+  { imgID: 1, imgPath: "assets/images/hamburger-menu.png", imgURI: "" }
 ];

@@ -6,8 +6,12 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { NgxPageScrollModule } from 'ngx-page-scroll';
 
+//3rd party libs
+import { NgxPageScrollModule } from 'ngx-page-scroll';
+//MyServices
+import { ImageService } from './services/image.service';
+//My Components
 import { HomeComponent } from './components/home/home.component';
 import { HeaderComponent } from './components/header/header.component';
 import { ContentMainComponent } from './components/content-main/content-main.component';
@@ -17,7 +21,8 @@ import { FeatureImageComponent } from './components/feature-image/feature-image.
 import { AboutComponent } from './components/about/about.component';
 import { ContentAboutComponent } from './components/content-about/content-about.component';
 
-// 3rd party libs
+
+
 
 
 @NgModule({
@@ -41,7 +46,7 @@ import { ContentAboutComponent } from './components/content-about/content-about.
     NgxPageScrollModule
   ],
   providers: [
-  
+    ImageService
   ],
   bootstrap: [AppComponent]
 })

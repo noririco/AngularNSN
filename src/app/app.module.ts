@@ -9,7 +9,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgxPageScrollModule } from 'ngx-page-scroll';
 
 import { HomeComponent } from './components/home/home.component';
-import { BarChartComponent } from './components/bar-chart/bar-chart.component';
 import { HeaderComponent } from './components/header/header.component';
 import { ContentMainComponent } from './components/content-main/content-main.component';
 import { GalleryComponent } from './components/gallery/gallery.component';
@@ -25,7 +24,6 @@ import { ContentAboutComponent } from './components/content-about/content-about.
   declarations: [
     AppComponent,
     HomeComponent,
-    BarChartComponent,
     HeaderComponent,
     ContentMainComponent,
     GalleryComponent,

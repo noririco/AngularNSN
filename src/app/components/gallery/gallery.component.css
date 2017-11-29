@@ -4,7 +4,9 @@
     grid-gap: 0px;
     grid-template-rows: auto;
 }
-
+a{
+    text-decoration: none;
+}
 
 .g_img1{
     grid-column: 1 / 13;

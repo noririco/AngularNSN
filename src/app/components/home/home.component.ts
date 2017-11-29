@@ -18,8 +18,10 @@ import { fadeInAnimation } from '../../_animations/fadeIn';
   host: { '[@fadeInAnimation]': '' }
 })
 export class HomeComponent implements OnInit {
+  collapse : boolean;
   //ID: any;
   constructor(private route: ActivatedRoute, private router: Router) { 
+    this.collapse = false;
     //for about/:id
     // this.route.params.subscribe( res => this.ID = +[res.id]);
     //console.log(this.route.snapshot.fragment);
@@ -40,5 +42,9 @@ export class HomeComponent implements OnInit {
       window.scrollTo(0,0);
     }
      //END OF TOGGLE
+  }
+
+  toggleCollapse(){
+    this.collapse = true;
   }
 }

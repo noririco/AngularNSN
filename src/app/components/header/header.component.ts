@@ -6,7 +6,7 @@ import {NavigationEnd, Router, ActivatedRoute} from '@angular/router';
 
 @Component({selector: 'app-header', templateUrl: './header.component.html', styleUrls: ['./header.component.css']})
 export class HeaderComponent implements OnInit {
-  collapsed : boolean = true;
+  collapsed : boolean;
   image : any;
   homeTitle : string;
   portfolioTitle : string;
@@ -18,6 +18,7 @@ export class HeaderComponent implements OnInit {
     this.aboutTitle = "ABOUT";
     this.hasFragment();
     this.image = this.imageService.getImageGlobal(1);
+    this.collapsed = false;
   }
 
   ngOnInit() : void {}
@@ -31,7 +32,7 @@ export class HeaderComponent implements OnInit {
     } else 
       return false;
     }
-    
+
   hasFragment() {
     if (this.route.snapshot.fragment !== undefined && this.route.snapshot.fragment !== null && this.route.snapshot.fragment == 'portfolio_link') {
       // console.log("yes");

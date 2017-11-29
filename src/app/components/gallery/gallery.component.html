@@ -1,7 +1,7 @@
 <div class="ga-wrapper">
     <div class="g g_img{{image.imgID}}" *ngFor="let image of images">
-      
+            <a routerLink="/about/{{image.imgID}}">
           <app-feature-image *ngIf="image" [image]="image"></app-feature-image>
-      
+      </a>
     </div>
 </div>

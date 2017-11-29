@@ -21,7 +21,7 @@
       <span class="link_title">{{ aboutTitle }}</span>
     </a>
   </div>
-  <div class="btn nb_link4 nb_item hambtn">
+  <div *ngIf="!collapsed" class="btn nb_link4 nb_item hambtn" (click)="collapsed = !collapsed">
     <!-- TODO: this should open a fullsize page with menu item, with transperent background -->
     <button>
         <span class="menuicon">
@@ -29,7 +29,8 @@
         </span> 
     </button>
   </div>
-  <div id="demo" class="collapse">
-      Lorem ipsum dolor text....
+  <div *ngIf="collapsed" class="collapse">
+    <!-- TODO: this should open a fullsize page with menu item, with transperent background -->
+    sdsdsdsd
   </div>
 </div>

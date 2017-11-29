@@ -38,7 +38,6 @@
     top:0;
     z-index:1;
 }
-
 .g_content-main{
     grid-column: 1 / 13;
     grid-row: 1 / span 2;

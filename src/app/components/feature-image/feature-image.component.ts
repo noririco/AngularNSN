@@ -6,8 +6,6 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./feature-image.component.css']
 })
 export class FeatureImageComponent implements OnInit {
-  likeButton: any;
-  linkButton: any;
   @Input() image: any;
   
   constructor() { }

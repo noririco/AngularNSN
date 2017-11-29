@@ -69,11 +69,13 @@ a{
 .sub_title{
     font-size: 3vw;
     font-family: Helvetica;
+    font-weight: 100;
     /* background-color: green; */
 }
 .aboutlink{
     font-size: 3vw;
     font-family: Helvetica;
+    font-weight: 100;
 }
 .mini_title{
     font-size: calc(1vw + 1vh);

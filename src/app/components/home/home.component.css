@@ -15,8 +15,21 @@
     left:0;
     z-index:0;
 }
+.headerWrapper{
+    height: 11vh;
+    z-index: 2;
+    background: white;
+    position: fixed;
+}
+.headerWrapperFull{
+    height: 100vh  ;
+    z-index: 2;
+    opacity: 0.9;
+    background: white;
+    position: fixed;
+}
 
-.home-wrapper{
+/* .home-wrapper{
     position: relative;
     top: 0;
     left: 0;
@@ -27,50 +40,77 @@
     grid-gap: 0px;
     grid-auto-rows: 11vh 89vh auto 230px;
     z-index: 1;
+} */
+.home-wrapper{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-gap: 0px;
+    grid-auto-rows: 100vh auto 230px;
+    z-index: 1;
 }
 
-.g_header{
+/* .g_header{
     grid-column: 1 / 13;
     grid-row: 1;
     background-color: white;
-    /* header is now fixed to top */
     position: sticky;
     top:0;
     z-index:1;
-}
+} */
 .g_content-main{
     grid-column: 1 / 13;
-    grid-row: 1 / span 2;
+    grid-row: 1;
 }
 
 .g_gallery{
     grid-column: 1 / 13;
-    grid-row: 3;
+    grid-row: 2;
 }
 
 .g_footer{
     grid-column: 1 / 13;
-    grid-row: 4;
+    grid-row: 3;
 }
 
 /* for tablet */
-@media screen and (min-width: 600px) {
+/* @media screen and (min-width: 600px) {
     .home-wrapper{
         grid-auto-rows: 11vh 89vh auto 230px;
     }
     .g_header{
         background-color: red;
     }
+} */
+@media screen and (min-width: 600px) {
+    .home-wrapper{
+        grid-auto-rows: 100vh auto 230px;
+    }
+    .headerWrapper{
+        background-color: red;
+    }
 }
 
 /* for Desktop */
-@media screen and (min-width: 1025px) {
+/* @media screen and (min-width: 1025px) {
     .home-wrapper{
         grid-auto-rows: 7vh 93vh auto 7vh;
     }
     .g_header{
         background-color: rgba(36, 34, 34, 0.7);
-        /* opacity: 90%; */
-        /* position: fixed; */
+    }
+} */
+@media screen and (min-width: 1025px) {
+    .home-wrapper{
+        grid-auto-rows: 100vh auto 7vh;
+    }
+    .headerWrapper{
+        height: 7vh;
+        position: fixed;
+        background-color: rgba(36, 34, 34, 0.7);
     }
 }

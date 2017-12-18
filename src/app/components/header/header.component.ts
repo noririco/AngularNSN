@@ -1,5 +1,5 @@
 import { ImageService } from './../../services/image.service';
-import {Component, OnInit, DoCheck, OnChanges} from '@angular/core';
+import {Component, OnInit, DoCheck, OnChanges, EventEmitter, Output} from '@angular/core';
 import {NgStyle} from '@angular/common';
 import * as $ from 'jquery';
 import {NavigationEnd, Router, ActivatedRoute} from '@angular/router';
@@ -11,6 +11,7 @@ export class HeaderComponent implements OnInit {
   homeTitle : string;
   portfolioTitle : string;
   aboutTitle : string;
+  @Output() onToggleCollapse = new EventEmitter<boolean>();
 
   constructor(private router : Router, private route : ActivatedRoute, private imageService : ImageService) {
     this.homeTitle = "HOME";
@@ -19,6 +20,7 @@ export class HeaderComponent implements OnInit {
     this.hasFragment();
     this.image = this.imageService.getImageGlobal(1);
     this.collapsed = false;
+    
   }
 
   ngOnInit() : void {}
@@ -41,5 +43,11 @@ export class HeaderComponent implements OnInit {
       // console.log("no");
       return false;
     }
+  }
+
+  toggleCollapse(){
+    console.log("Clicked");
+    this.collapsed = !this.collapsed;
+    this.onToggleCollapse.emit();
   }
 }

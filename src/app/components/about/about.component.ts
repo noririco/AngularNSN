@@ -14,7 +14,7 @@ import {fadeInAnimation} from '../../_animations/fadeIn';
   }
 })
 export class AboutComponent implements OnInit {
-
+  collapse : boolean;
   ID : any;
   constructor(private router : Router, private route : ActivatedRoute) {
     // check for about/:id this.route.params.subscribe( (res) => {   this.ID =
@@ -25,6 +25,16 @@ export class AboutComponent implements OnInit {
   ngOnInit() {
     // console.log(this.ID);
     window.scrollTo(0, 0);
+  }
+
+  toggleCollapse(){
+    this.collapse = true;
+  }
+  onToggleCollapse($event){
+    this.collapse = !this.collapse; 
+    console.log(this.collapse); 
+    // now we do *ngIf in template
+    // or we can do class attachment
   }
 
 }

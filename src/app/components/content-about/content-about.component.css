@@ -106,7 +106,7 @@ a{
     }
     .f_resume{
         grid-column: 1 / 13;
-        grid-row: 9;
+        grid-row: 10;
         /* align-self: flex-start; */
         color: #4378ff;
         /* justify-self: center; */
@@ -120,7 +120,7 @@ a{
         grid-row: 6 / span 4;
         /* display: block; */
         align-self: flex-start;
-        /*text-align: center; */
+        text-align: center;
         margin: 0 10%;
     }
     .sub_title{
@@ -131,14 +131,14 @@ a{
 /* for Desktop */
 @media screen and (min-width: 1025px) {
     .f_sub_title{
-        grid-column: 4 / 10;
+        grid-column: 2 / 12;
         /* grid-row: 3; */
         grid-row: 6 / span 4;
         /* display: block; */
         /* align-self: flex-start; */
         justify-content: center;
-        text-align: center;
-        margin: 0 10%;
+        /* text-align: center; */
+        margin: 0 15%;
     }
     .sub_title{
         font-size: 17px;

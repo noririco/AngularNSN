@@ -59,8 +59,9 @@ a{
     color: white;
     /* font-size: 50px; */
 }
+
 .main_title{
-    font-size: calc(4vw + 4vh + 1vmin);
+    font-size: 35px;
     line-height: 1em;
     letter-spacing: normal;
     color: white;
@@ -85,9 +86,9 @@ a{
     padding-top: 35px;
     
 }
-@media screen and (max-width: 320px) {
+@media screen and (min-width: 320px) {
     .main_title{
-        font-size: 35px;
+        font-size: calc(4vw + 4vh + 1vmin);
         line-height: 1em;
         letter-spacing: normal;
         color: white;

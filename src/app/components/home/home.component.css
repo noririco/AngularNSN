@@ -6,7 +6,7 @@
     z-index: 0;
     
 }
-.bg-bg-wrapper{
+/* .bg-bg-wrapper{
     background-color: #191919;
     width: 100%;
     height: 100%;
@@ -14,7 +14,8 @@
     top:0;
     left:0;
     z-index:0;
-}
+} */
+
 .headerWrapper{
     height: 11vh;
     z-index: 2;
@@ -111,6 +112,6 @@
     .headerWrapper{
         height: 7vh;
         position: fixed;
-        background-color: rgba(36, 34, 34, 0.7);
+        background-color: rgba(36, 34, 34, 1);
     }
 }

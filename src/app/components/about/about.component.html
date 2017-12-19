@@ -1,20 +1,18 @@
-<div class="bg-bg-wrapper">
-  <div class="main-wrapper" [@fadeInAnimation] id="about_page">
-    <div class="headerWrapper" [class.headerWrapperFull]="collapse" id="headerWrapper">
-        <app-header 
-          (onToggleCollapse)="onToggleCollapse($event)">
-        </app-header>
+<div class="main-wrapper" [@fadeInAnimation] id="about_page">
+  <div class="headerWrapper" [class.headerWrapperFull]="collapse" id="headerWrapper">
+      <app-header 
+        (onToggleCollapse)="onToggleCollapse($event)">
+      </app-header>
+  </div>
+  <div class="about-wrapper" autoscroll="true">
+    <!-- <div class="g_header" id="headerWrapper">
+      <app-header></app-header>
+    </div> -->
+    <div class="g_content-about">
+      <app-content-about></app-content-about>
     </div>
-    <div class="about-wrapper" autoscroll="true">
-      <!-- <div class="g_header" id="headerWrapper">
-        <app-header></app-header>
-      </div> -->
-      <div class="g_content-about">
-        <app-content-about></app-content-about>
-      </div>
-      <div class="g_footer">
-        <app-footer></app-footer>
-      </div>
+    <div class="g_footer">
+      <app-footer></app-footer>
     </div>
   </div>
 </div>

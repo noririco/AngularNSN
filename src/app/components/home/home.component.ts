@@ -47,10 +47,4 @@ export class HomeComponent implements OnInit {
   toggleCollapse(){
     this.collapse = true;
   }
-  onToggleCollapse($event){
-    this.collapse = !this.collapse; 
-    console.log(this.collapse); 
-    // now we do *ngIf in template
-    // or we can do class attachment
-  }
 }

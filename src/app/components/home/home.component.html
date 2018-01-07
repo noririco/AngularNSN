@@ -1,9 +1,14 @@
 <div class="main-wrapper" [@fadeInAnimation]>
-  <div class="headerWrapper" [class.headerWrapperFull]="collapse" id="headerWrapper">
+  <!-- <div class="headerWrapper" [class.headerWrapperFull]="collapse" id="headerWrapper">
       <app-header 
         (onToggleCollapse)="onToggleCollapse($event)">
       </app-header>
+  </div> -->
+  <div class="header-wrapper">
+      <app-header></app-header>
   </div>
+      
+
   <div class="home-wrapper" autoscroll="true" id="homeWrapper">
       <!-- <div class="g g_header" id="headerWrapper">
         <app-header></app-header>

@@ -1,0 +1,44 @@
+<div class="navbar-wrapper" [class.navbar-wrapperFull]="collapsed">
+  <div *ngIf="!collapsed" class="nav-no-collapsed">
+      <div class="btn nb_link1 nb_item" >
+          <a pageScroll [pageScrollDuration]="900" routerLink="/home" href="#homeWrapper" id="home_link"> 
+          <!-- <a pageScroll [pageScrollDuration]="900" routerLink="/home" href="#homeWrapper"  [routerLinkActiveOptions]="{ exact:true }" routerLinkActive="active-link" id="home_link"> -->     
+            <span *ngIf="hasFragment() || !myUrl('home')" class="link_title not-active-link">{{ homeTitle }}</span>
+            <span *ngIf="!hasFragment() && myUrl('home')" class="link_title active-link">{{ homeTitle }}</span>
+          </a>
+        </div>
+        <div class="btn nb_link2 nb_item">
+          <a pageScroll [pageScrollOffset]="65" [pageScrollDuration]="900" pageScrollAdjustHash="true" routerLink="/home" href="#portfolio_link">
+          <!-- <a pageScroll [pageScrollDuration]="900" routerLink="/home" fragment="portfolio" href="#portfolio_link" routerLinkActive="active-link"> -->
+              <span *ngIf="hasFragment()" class="link_title active-link">{{ portfolioTitle }}</span>
+              <span *ngIf="!hasFragment()" class="link_title not-active-link">{{ portfolioTitle }}</span>
+          </a>
+        </div>
+        <div class="btn nb_link3 nb_item">
+          <a pageScroll [pageScrollDuration]="900" routerLink="/about" href="#about_page"  routerLinkActive="active-link" id="about_link">
+            <span class="link_title">{{ aboutTitle }}</span>
+          </a>
+        </div>
+  </div>
+  <div *ngIf="collapsed" class="nav-collapsed">
+      <div [class.disabled]="myUrl('home')" class="btn nb_link1_full nb_itemFull">
+          <a pageScroll [pageScrollDuration]="900" routerLink="/home" href="#homeWrapper" id="home_link"> 
+          <!-- <a pageScroll [pageScrollDuration]="900" routerLink="/home" href="#homeWrapper"  [routerLinkActiveOptions]="{ exact:true }" routerLinkActive="active-link" id="home_link"> -->     
+            <span *ngIf="hasFragment() || !myUrl('home')" class="link_title not-active-link">{{ homeTitle }}</span>
+            <span *ngIf="!hasFragment() && myUrl('home')" class="link_title active-link">{{ homeTitle }}</span>
+          </a>
+        </div>
+        <div class="btn nb_link2_full nb_itemFull">
+          <a pageScroll [pageScrollOffset]="65" [pageScrollDuration]="900" pageScrollAdjustHash="true" routerLink="/home" href="#portfolio_link">
+          <!-- <a pageScroll [pageScrollDuration]="900" routerLink="/home" fragment="portfolio" href="#portfolio_link" routerLinkActive="active-link"> -->
+              <span *ngIf="hasFragment()" class="link_title active-link">{{ portfolioTitle }}</span>
+              <span *ngIf="!hasFragment()" class="link_title not-active-link">{{ portfolioTitle }}</span>
+          </a>
+        </div>
+        <div [class.disabled]="myUrl('about')" class="btn nb_link3_full nb_itemFull">
+          <a pageScroll [pageScrollDuration]="900" routerLink="/about" href="#about_page"  routerLinkActive="active-link" id="about_link">
+            <span class="link_title">{{ aboutTitle }}</span>
+          </a>
+        </div>
+    </div>
+</div>

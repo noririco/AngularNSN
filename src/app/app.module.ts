@@ -20,6 +20,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { FeatureImageComponent } from './components/feature-image/feature-image.component';
 import { AboutComponent } from './components/about/about.component';
 import { ContentAboutComponent } from './components/content-about/content-about.component';
+import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 
 
 
@@ -35,7 +36,8 @@ import { ContentAboutComponent } from './components/content-about/content-about.
     FooterComponent,
     FeatureImageComponent,
     AboutComponent,
-    ContentAboutComponent
+    ContentAboutComponent,
+    NavBarComponent
   ],
   imports: [
     BrowserModule,

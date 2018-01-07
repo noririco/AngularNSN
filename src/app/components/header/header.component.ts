@@ -3,20 +3,22 @@ import {Component, OnInit, DoCheck, OnChanges, EventEmitter, Output} from '@angu
 import {NgStyle} from '@angular/common';
 import * as $ from 'jquery';
 import {NavigationEnd, Router, ActivatedRoute} from '@angular/router';
-
-@Component({selector: 'app-header', templateUrl: './header.component.html', styleUrls: ['./header.component.css']})
+import {NavBarComponent} from '../nav-bar/nav-bar.component';
+import { fadeInAnimation } from '../../_animations/fadeIn';
+@Component({
+  selector: 'app-header',
+  templateUrl: './header.component.html', 
+  styleUrls: ['./header.component.css'],
+  animations: [fadeInAnimation],
+  // attach the fade in animation to the host (root) element of this component
+  host: { '[@fadeInAnimation]': '' }
+})
 export class HeaderComponent implements OnInit {
   collapsed : boolean;
   image : any;
-  homeTitle : string;
-  portfolioTitle : string;
-  aboutTitle : string;
-  @Output() onToggleCollapse = new EventEmitter<boolean>();
+  //@Output() onToggleCollapse = new EventEmitter<boolean>();
 
   constructor(private router : Router, private route : ActivatedRoute, private imageService : ImageService) {
-    this.homeTitle = "HOME";
-    this.portfolioTitle = "PORTFOLIO";
-    this.aboutTitle = "ABOUT";
     this.hasFragment();
     this.image = this.imageService.getImageGlobal(1);
     this.collapsed = false;
@@ -45,9 +47,12 @@ export class HeaderComponent implements OnInit {
     }
   }
 
-  toggleCollapse(){
+  onHamburgerMenuClick(){
     console.log("Clicked");
     this.collapsed = !this.collapsed;
-    this.onToggleCollapse.emit();
+    //this.onToggleCollapse.emit();
+  }
+  onHeaderWrapperClick(){
+    this.collapsed = !this.collapsed;
   }
 }

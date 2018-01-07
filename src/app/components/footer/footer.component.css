@@ -3,7 +3,7 @@
     height: 100%;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: auto;
+    grid-template-rows: repeat(12,1fr);
     background-color: rgba(67, 120, 255, 1); 
 }
 .f{
@@ -17,25 +17,39 @@
     
 }
 .f_logo{
+    grid-row: 2 / span 4;
     
+}
+.f_logo > span {
+    padding: 0.4em;
 }
 .f_email{
-    
+    grid-row: 7;
+}
+.f_email > span {
+    font-size: 1.5em;
+    letter-spacing: 0.05em;
 }
 .f_phone{
-    
+    /* align-self: flex-start; */
+    grid-row: 8;
+}
+
+.f_phone > span {
+    font-size: 1.5em;
+    letter-spacing: 0.05em;
 }
 .f_social{
     
 }
 .social{
-    display:inline-block;
-    font-size:20px;
+    /* display:inline-block; */
+    font-size: 4em;
     margin: 0 5px;
     /* border: 1px green solid; */
 }
 .logo{
-    font-size: 20px;
+    font-size: 4em;
 }
 
 

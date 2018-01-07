@@ -88,7 +88,7 @@ a{
 }
 @media screen and (min-width: 320px) {
     .main_title{
-        font-size: calc(4vw + 4vh + 1vmin);
+        font-size: calc(3vw + 3vh + 1vmin);
         line-height: 1em;
         letter-spacing: normal;
         color: white;

@@ -23,7 +23,7 @@ export class NavBarComponent implements OnInit {
 
   ngOnInit() : void {
     this.collapsed = this.isCollapsed;
-    console.log(this.collapsed);
+    //console.log(this.collapsed);
   }
 
   ngDoCheck() : void {
@@ -31,8 +31,10 @@ export class NavBarComponent implements OnInit {
   }
 
   myUrl(name: string) {
-    // console.log(this.route.snapshot.url.toString());
+    //console.log(this.route.snapshot.url.toString());
     if (this.route.snapshot.url.toString() == name) {
+      //console.log("here");
+      
       return true;
     } else 
       return false;

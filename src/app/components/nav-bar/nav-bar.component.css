@@ -33,6 +33,7 @@
 }
 a{
     color: #fff;
+    text-decoration: none;
 }
 a:hover{
     color: #004ea1;
@@ -41,13 +42,8 @@ a:active{
     /* Fix this color to show always on active page */
     color: #007bff;
 }
-.disabled{
-    cursor: not-allowed;
-}
 
-.collapsedMenu{
-    
-}
+
 .nb_item{
     display: none;
     font-weight: 100;
@@ -62,6 +58,7 @@ a:active{
     align-items: center;
     justify-content: center;
     letter-spacing: 0.05em;
+    cursor: pointer;
 }
 .nb_link1_full{
     grid-column: 1;
@@ -75,7 +72,11 @@ a:active{
     grid-column: 1;
     grid-row: 3;
 }
-
+.disabled{
+    pointer-events: none;
+    cursor: default;
+    opacity: 0.21;
+}
 
 
 /* for tablet */

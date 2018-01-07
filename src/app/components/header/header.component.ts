@@ -1,3 +1,4 @@
+
 import { ImageService } from './../../services/image.service';
 import {Component, OnInit, DoCheck, OnChanges, EventEmitter, Output} from '@angular/core';
 import {NgStyle} from '@angular/common';
@@ -5,13 +6,15 @@ import * as $ from 'jquery';
 import {NavigationEnd, Router, ActivatedRoute} from '@angular/router';
 import {NavBarComponent} from '../nav-bar/nav-bar.component';
 import { fadeInAnimation } from '../../_animations/fadeIn';
+import { fadeInWithColor } from '../../_animations/fadeInWithColor';
+
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html', 
   styleUrls: ['./header.component.css'],
-  animations: [fadeInAnimation],
+  animations: [fadeInAnimation, fadeInWithColor],
   // attach the fade in animation to the host (root) element of this component
-  host: { '[@fadeInAnimation]': '' }
+  host: { '[@fadeInAnimation]': '', '[@fadeInWithColor]': ''}
 })
 export class HeaderComponent implements OnInit {
   collapsed : boolean;
@@ -48,7 +51,7 @@ export class HeaderComponent implements OnInit {
   }
 
   onHamburgerMenuClick(){
-    console.log("Clicked");
+    //console.log("Clicked");
     this.collapsed = !this.collapsed;
     //this.onToggleCollapse.emit();
   }

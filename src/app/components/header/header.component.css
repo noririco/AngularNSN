@@ -1,3 +1,7 @@
+*:focus {
+    outline:none;
+}
+
 .headerWrapper{
     height: 11vh;
     z-index: 2;
@@ -24,7 +28,12 @@
     grid-template-columns: repeat(12,1fr);
     grid-template-rows: 11vh;
 }
-
+.hamburger{
+    outline: none;
+}
+.i:focus{
+    outline: none;
+}
 .collapsed > .hamburger{
     /* border: 1px solid red; */
     grid-column: 13;
@@ -33,7 +42,6 @@
     align-self: center;
 }
 .no-collapsed > .hamburger{
-    /* border: 1px solid red; */
     grid-column: 13;
     grid-row: 1;
     justify-self: center;
@@ -56,7 +64,7 @@
 
 button{
     background-color: transparent;
-    border: none;
+    border: none !important;
     cursor: pointer;
 }
 .menuicon{
@@ -70,9 +78,7 @@ button{
 
 
 @media screen and (min-width: 600px) {
-    .headerWrapper{
-        background-color: rgba(36, 34, 34, 1);
-    }
+    
 }
 
 @media screen and (min-width: 1025px) {

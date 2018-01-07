@@ -23,7 +23,7 @@ body{
     height: 100%;
 }
 .lazyimage{
-    display: nonng servee;
+    display: none;
 }
 .preload{
     display: none;

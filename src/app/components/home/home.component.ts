@@ -30,7 +30,7 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
     // TODO: Toggle this to make NO SCROLL from about page to portfolio
     if(this.route.snapshot.fragment == 'portfolio'){
-      console.log(this.route.snapshot);
+      //console.log(this.route.snapshot);
       
     //   var fixedString = '#portfolio_link';
     //   var link = $(fixedString);

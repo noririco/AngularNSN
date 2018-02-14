@@ -22,6 +22,14 @@ export class ImageService {
     return IMAGES.slice(0).find(image=> image.imgID == id);
   }
 
+  getImagesProject() {
+    return this.myImages = IMAGES_PROJECT.slice(0);
+  }
+
+  getImageProject(id: number, scale: string) {
+    return IMAGES_PROJECT.slice(0).find(image => image.imgID == id && image.scale == scale);
+  }
+
 }
 
 const IMAGES = [
@@ -35,4 +43,11 @@ const IMAGES = [
 
 const IMAGES_GLOBAL = [
   { imgID: 1, imgPath: "assets/images/hamburger-menu.png", imgURI: "" }
+];
+
+
+const IMAGES_PROJECT = [
+  { imgID: 1, scale: "desktop", title: "WP Website", imgPath: "assets/images/projects/womenpalace-full-screen-mu1_DESKTOP.png", imgURI: "" },
+  { imgID: 1, scale: "tablet", title: "WP Website", imgPath: "assets/images/projects/womenpalace-full-screen-mu1_TABLET.png", imgURI: "" },
+  { imgID: 1, scale: "mobile", title: "WP Website", imgPath: "assets/images/projects/womenpalace-full-screen-mu1_MOBILE.png", imgURI: "" }
 ];

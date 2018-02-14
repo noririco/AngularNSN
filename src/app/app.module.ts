@@ -21,6 +21,7 @@ import { FeatureImageComponent } from './components/feature-image/feature-image.
 import { AboutComponent } from './components/about/about.component';
 import { ContentAboutComponent } from './components/content-about/content-about.component';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
+import { ProjectDetailComponent } from './components/project-detail/project-detail.component';
 
 
 
@@ -37,7 +38,8 @@ import { NavBarComponent } from './components/nav-bar/nav-bar.component';
     FeatureImageComponent,
     AboutComponent,
     ContentAboutComponent,
-    NavBarComponent
+    NavBarComponent,
+    ProjectDetailComponent
   ],
   imports: [
     BrowserModule,

@@ -1,7 +1,8 @@
 <div class="ga-wrapper">
     <div class="g g_img{{image.imgID}}" *ngFor="let image of images">
-            <a routerLink="/about/{{image.imgID}}">
+        <div class="link-project" (click)="scaleAndgoProject(image.imgID)">
+            <!-- <a routerLink="/about/{{image.imgID}}/{{scaleSize}}"> -->
           <app-feature-image *ngIf="image" [image]="image"></app-feature-image>
-      </a>
+        </div>
     </div>
 </div>

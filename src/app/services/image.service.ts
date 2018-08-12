@@ -30,6 +30,10 @@ export class ImageService {
     return IMAGES_PROJECT.slice(0).find(image => image.imgID == id && image.scale == scale);
   }
 
+  getLogos(scale: string) {
+    return LOGOS.slice(0).find(image => image.scale == scale);
+  }
+
 }
 
 const IMAGES = [
@@ -46,8 +50,25 @@ const IMAGES_GLOBAL = [
 ];
 
 
+//TODO: Missing two projects 3,4
 const IMAGES_PROJECT = [
   { imgID: 1, scale: "desktop", title: "WP Website", imgPath: "assets/images/projects/womenpalace-full-screen-mu1_DESKTOP.png", imgURI: "" },
   { imgID: 1, scale: "tablet", title: "WP Website", imgPath: "assets/images/projects/womenpalace-full-screen-mu1_TABLET.png", imgURI: "" },
-  { imgID: 1, scale: "mobile", title: "WP Website", imgPath: "assets/images/projects/womenpalace-full-screen-mu1_MOBILE.png", imgURI: "" }
+  { imgID: 1, scale: "mobile", title: "WP Website", imgPath: "assets/images/projects/womenpalace-full-screen-mu1_MOBILE.png", imgURI: "" },
+  { imgID: 2, scale: "desktop", title: "WP App", imgPath: "assets/images/projects/MU_WP-APP_DESKTOP.png", imgURI: "" },
+  { imgID: 2, scale: "tablet", title: "WP App", imgPath: "assets/images/projects/MU_WP-APP_TABLET.png", imgURI: "" },
+  { imgID: 2, scale: "mobile", title: "WP App", imgPath: "assets/images/projects/MU_WP-APP_MOBILE.png", imgURI: "" },
+  { imgID: 5, scale: "desktop", title: "Volvo Landing page", imgPath: "assets/images/projects/MU_VOLVO-WEB_DESKTOP.png", imgURI: "" },
+  { imgID: 5, scale: "tablet", title: "Volvo Landing page", imgPath: "assets/images/projects/MU_VOLVO-WEB_TABLET.png", imgURI: "" },
+  { imgID: 5, scale: "mobile", title: "Volvo Landing page", imgPath: "assets/images/projects/MU_VOLVO-WEB_MOBILE.png", imgURI: "" },
+  { imgID: 6, scale: "desktop", title: "Reshset x Elite Collaboration", imgPath: "assets/images/projects/MU_RESHET-WEB_DESKTOP.png", imgURI: "" },
+  { imgID: 6, scale: "tablet", title: "Reshset x Elite Collaboration", imgPath: "assets/images/projects/MU_RESHET-WEB_TABLET.png", imgURI: "" },
+  { imgID: 6, scale: "mobile", title: "Reshset x Elite Collaboration", imgPath: "assets/images/projects/MU_RESHET-WEB_MOBILE.png", imgURI: "" },
+];
+
+//TODO: Logos
+const LOGOS = [
+  { imgID: 1, scale: "desktop", title: "worked with...", imgPath: "assets/images/logos/LOGOS_DESKTOP.png", imgURI: "" },
+  { imgID: 1, scale: "tablet", title: "worked with...", imgPath: "assets/images/logos/LOGOS_TABLET.png", imgURI: "" },
+  { imgID: 1, scale: "mobile", title: "worked with...", imgPath: "assets/images/logos/LOGOS_MOBILE.png", imgURI: "" }
 ];

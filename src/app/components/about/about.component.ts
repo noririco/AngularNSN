@@ -1,3 +1,4 @@
+import { ImageService } from './../../services/image.service';
 import {HeaderComponent} from './../header/header.component';
 import {Component, OnInit} from '@angular/core';
 import {ActivatedRoute, Router} from '@angular/router';
@@ -16,14 +17,43 @@ import {fadeInAnimation} from '../../_animations/fadeIn';
 export class AboutComponent implements OnInit {
   collapse : boolean;
   ID : any;
-  constructor(private router : Router, private route : ActivatedRoute) {
+  logos : any;
+  id: number;
+  scale: string;
+  scaleSize: string;
+  innerHeight: any;
+  innerWidth: any;
+  constructor(private router : Router, 
+              private route : ActivatedRoute,
+              private _imageService: ImageService) {
     // check for about/:id this.route.params.subscribe( (res) => {   this.ID =
     // +[res.id]; });
-
   }
-
+  
   ngOnInit() {
     // console.log(this.ID);
+    this.innerHeight = (window.innerHeight);
+    this.innerWidth = (window.innerWidth);
+    console.log(this.innerHeight);
+    console.log(this.innerWidth);
+    
+    if(this.innerWidth < 600) {
+      this.scaleSize = 'mobile';
+    }
+    else if(this.innerWidth > 600 && this.innerWidth < 1025){
+      this.scaleSize = 'tablet';
+    }
+    else {
+      this.scaleSize = 'desktop';
+    }
+
+    this.route.params.subscribe( params => {
+      this.id = params['id'],
+      this.scale = params['scale']
+    });
+    this.logos = this._imageService.getLogos(this.scaleSize);
+    console.log(this.logos);
+    
     window.scrollTo(0, 0);
   }
 

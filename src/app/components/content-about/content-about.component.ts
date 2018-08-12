@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input} from '@angular/core';
 
 @Component({
   selector: 'app-content-about',
@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./content-about.component.css']
 })
 export class ContentAboutComponent implements OnInit {
-
+  @Input() logos: any;
   constructor() { }
 
   ngOnInit() {
